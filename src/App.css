@@ -1,45 +1,130 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Carter+One|Days+One|Poppins|Viga');
+
+*{
+  background: #222;
+}
+
+.App{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+header{
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header, img{
+  max-width: 100%;
+}
+
+.title{
+  font-family: 'Cabin Sketch', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 150%;
+  color: #ffd700;
+  padding: 60px 10px 0px 10px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #6cb5d6;
+  margin: 1em 0;
+  padding: 0; 
+}
+
+.container {
   display: flex;
   flex-flow: row wrap;
 }
 
-
-.container {
- display: block;
- min-width: 50%;
- max-width: 50%;
- width: 100%;
- background-color: black;
- color: white;
-}
-
-.container img {
-  height: auto;
+.brewery-info{
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
   width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .brewery-info{
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+#beer-logo{
+  max-width: 50%;
+  height: 100px; 
+}
+
+/* Nav Bar */
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #ffd700;
+}
+
+.topnav a.active {
+  color:#a09242;
+  font-weight: 1000;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-menu {display:none;}
+}
+
+@media only screen and (max-width: 601px) {
+  .desktop-menu {display:none;}
+}
+
+.mobile-menu{
+  color:#a09242;
+  font-size: 25px;
+  float: right;
+  padding-right: 10px;
+}
+
+.mobile-menu a:hover{
+  color: #ffd700;
 }
 
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+/* Buttons */
+button {
+  border: none;
   color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 
-.App-title {
-  font-size: 1.5em;
+
+/*Content*/
+
+button:hover {
+  color: #6cb5d6;
 }
 
-.App-intro {
-  font-size: large;
+.brewtitle{
+  color: #ffd700;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
